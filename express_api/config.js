@@ -15,12 +15,12 @@ module.exports = {
     reset: 'Dear User,\n\nYou recently requested to reset the password for your {app_name} account. Please click the link below to proceed.\n{app_url}/#/changePassword/{token}\n\nBest Regards,\nAdministrator'
   },
   db: {
-    host: '127.0.0.1',
-    port: 3306,
-    user: 'root',
-    password: '',
+    host: 'localhost',
+    port: 5432,
+    user: 'postgres',
+    password: 'postgres',
     database: 'testdb',
-    dialect: 'mysql'
+    dialect: 'postgres'
   },
   menu: [
     { title: 'Brand', path: 'brand', roles: 'ADMIN,USER', show: true },
@@ -31,3 +31,4 @@ module.exports = {
   ],
   jwtSecret: 'b0WciedNJvFCqFRbB2A1QhZoCDnutAOen5g1FEDO0HsLTwGINp04GXh2OXVpTqQL'
 }
+

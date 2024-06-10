@@ -5,7 +5,7 @@ const config = require('./config').db
 const util = require('./util')
 
 module.exports.knex = knex({
-  client: 'mysql',
+  client: 'postgres',
   wrapIdentifier: (value) => value
 })
 
